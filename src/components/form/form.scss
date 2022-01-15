@@ -1,0 +1,22 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .react-card-flip {
+        max-width: 300px;
+        width: 50%;
+        margin: 0 auto;
+        
+        .member-card-front, .member-card-back {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+            border-radius: 5px;
+            -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); 
+            -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); 
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            padding: 15px 0;
+        }
+    }
+}
