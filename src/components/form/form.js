@@ -77,36 +77,28 @@ const GenerateSantas = () => {
                             className="field-error"
                           />
                         </div>
-                        {/* <div className="col">
-                          <label htmlFor={`friends.${index}.email`}>Email</label>
-                          <Field
-                            name={`friends.${index}.email`}
-                            placeholder="jane@acme.com"
-                            type="email"
-                          />
-                          <ErrorMessage
-                            name={`friends.${index}.name`}
-                            component="div"
-                            className="field-error"
-                          />
-                        </div> */}
                         <div className="col">
           
                             
                         </div>
                       </div>
                     ))}
-                  <Button
-                    type="button"
-                    variant="outlined"
-                    onClick={() => push({ name: ''})}
-                  >
-                    Add Member
-                  </Button>
+                  <div className='form-buttons-container'>
+                    
+                    <Button
+                      type="button"
+                      variant="outlined"
+                      onClick={() => push({ name: ''})}
+                    >
+                      Add Member
+                    </Button>
+
+                    <Button type="submit" variant="contained">Generate</Button>
+                   </div>
+
                 </div>
               )}
             </FieldArray>
-            <Button type="submit" variant="contained">Generate</Button>
           </Form>
         )}
       </Formik>

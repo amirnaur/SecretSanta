@@ -1,3 +1,13 @@
+.form-buttons-container {
+    display: flex;
+
+    button[type=submit] {
+        margin-left: 15px;
+    }
+}
+.row {
+    margin-bottom: 10px;
+}
 .cards{
     display: flex;
     justify-content: center;
@@ -8,6 +18,7 @@
         margin: 0 auto;
         
         .member-card-front, .member-card-back {
+            background-color: #ffffff;
             text-align: center;
             font-size: 18px;
             font-weight: bold;
